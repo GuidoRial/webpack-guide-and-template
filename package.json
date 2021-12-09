@@ -1,0 +1,30 @@
+{
+  "name": "webpack-guide-and-template",
+  "version": "1.0.0",
+  "description": "## Step by Step Guide 1. Open the command line on your project and write: \"npt init -y\" 2. Then you want to add your dependencies with: \"npm install --save-dev webpack webpack-cli style-loader css-loader webpack-merge webpack-dev-server html-webpack-plugin\" 3. Create a dist folder and a src folder 4. On the src folder add webpack.common.js, webpack.dev.js and webpack.prod.js and paste the preset I provided 5. Add the two scripts I left in my package.json to change from dev (npm start) to production (npm run build) with the command line 6. Create a template.html and add anything you need to hard-code on your project, that'll be rendered to dist/index.html when you're done 7. Start writting your code on JS and CSS (don't forget to import/export whatever you need, in this repository I left an example on how to do it) 8. Everything should be routed to index.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.dev.js --watch",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuidoRial/webpack-guide-and-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuidoRial/webpack-guide-and-template/issues"
+  },
+  "homepage": "https://github.com/GuidoRial/webpack-guide-and-template#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
