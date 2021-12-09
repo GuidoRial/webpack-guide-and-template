@@ -9,3 +9,10 @@
 6. Create a template.html and add anything you need to hard-code on your project, that'll be rendered to dist/index.html when you're done
 7. Start writting your code on JS and CSS (don't forget to import/export whatever you need, in this repository I left an example on how to do it)
 8. Everything should be routed to index.js
+
+## Things you should know about each file
+- src is where your code goes, then after processing with webpack it "renders" to the dist folder. 
+- package.json contains both scripts you'll use. Use npm run build to start production mode and npm start to start developer mode
+- There are three files that contain the information regarding how webpack will behave
+1. webpack.common.js has everything that is shared in both modes, it takes index.js as an entry point so you'll have to route everything there, but you could add more if you want. Line 26 (clean: true) makes it so that the content on the dist folder are deleted before adding the new ones to avoid duplicates
+2. webpack.dev.js and webpack.prod.js use webpack-merge to link it's content with the previously mentioned
