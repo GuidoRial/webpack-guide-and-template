@@ -10,6 +10,11 @@
 7. Start writting your code on JS and CSS (don't forget to import/export whatever you need, in this repository I left an example on how to do it)
 8. Everything should be routed to index.js
 9. Install the @babel/preset-env with npm i -D @babel/preset-env and copy my .babelrc file in the project's root. This'll make us able to use ES6 modules
+10. To deploy to github pages:
+    a. add a .gitignore file and add "node_modules" so you don't commit that as it's not necessary
+    b. remove the dist directory from it if you somehow added it
+    c. make sure git knows about this subtree with this line on the command line: git add dist && git commit -m "Initial dist subtree commit"
+    d. Use subtree push to send it to the gh-pages branch on GitHub with: git subtree push --prefix dist origin gh-pages
 
 ## Things you should know about each file
 - src is where your code goes, then after processing with webpack it "renders" to the dist folder. 
