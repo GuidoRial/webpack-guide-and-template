@@ -2,13 +2,14 @@
 
 ## Step by Step Guide
 1. Open the command line on your project and write: "npt init -y"
-2. Then you want to add your dependencies with: "npm install --save-dev webpack webpack-cli style-loader css-loader webpack-merge webpack-dev-server html-webpack-plugin"
-3. Create a dist folder and a src folder
+2. Then you want to add your dependencies with: "npm install --save-dev webpack webpack-cli jest style-loader css-loader webpack-merge webpack-dev-server html-webpack-plugin"
+3. Create a dist folder, a src and a test folder
 4. On the project folder add webpack.common.js, webpack.dev.js and webpack.prod.js and paste the preset I provided
-5. Add the two scripts I left in my package.json to change from dev (npm start) to production (npm run build) with the command line
+5. Add the three scripts I left in my package.json to change from dev (npm start) to production (npm run build) with the command line as well as a test command that innitiates jest
 6. Create a template.html on /src and add anything you need to hard-code on your project, that'll be rendered to dist/index.html when you're done
 7. Start writting your code on JS and CSS (don't forget to import/export whatever you need, in this repository I left an example on how to do it)
 8. Everything should be routed to index.js
+9. Install the @babel/preset-env with npm i -D @babel/preset-env and copy my .babelrc file in the project's root. This'll make us able to use ES6 modules
 
 ## Things you should know about each file
 - src is where your code goes, then after processing with webpack it "renders" to the dist folder. 
