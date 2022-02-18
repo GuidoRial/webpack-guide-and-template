@@ -1,5 +1,10 @@
 # Webpack Guide and Template
 
+## A few comments
+Adding node_modules to github it's not the best practise, you can create a .gitignore file and just add "node_modules" to the first line, like I did in [this repo](https://github.com/GuidoRial/weather-app).
+The reason I kept node_modules here is because I wanted this to be a reference of how my VSCode should look (I did this when I had 3 months coding experience, I needed that reference haha)
+
+
 ## Step by Step Guide
 1. Open the command line on your project and write: "npm init -y"
 2. Then you want to add your dependencies with: "npm install --save-dev webpack webpack-cli jest style-loader css-loader webpack-merge webpack-dev-server html-webpack-plugin"
